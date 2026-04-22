@@ -21,11 +21,20 @@ const Hero = () => {
   return (
     <section className="hero-section">
       <div className="hero-slider">
-        {slides.map((src, i) => (
-          <div key={i} className={`hero-slide ${current === i ? 'active' : ''}`}>
-            <img src={src} alt={`Slide ${i + 1}`} />
-          </div>
-        ))}
+        <div 
+          className="hero-track" 
+          style={{ 
+            transform: `translateX(-${current * 100}%)`,
+            transition: 'transform 0.5s ease-in-out'
+          }}
+        >
+          {slides.map((src, i) => (
+            <div key={i} className={`hero-slide ${current === i ? 'active' : ''}`}>
+              <img src={src} alt={`Slide ${i + 1}`} />
+            </div>
+          ))}
+        </div>
+
 
         <button className="hero-arrow prev" onClick={prev} aria-label="Previous">&#8249;</button>
         <button className="hero-arrow next" onClick={next} aria-label="Next">&#8250;</button>

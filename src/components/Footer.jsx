@@ -5,44 +5,6 @@ import logo from '../assets/logo.png';
 const Footer = () => (
   <footer className="site-footer" id="contact">
 
-    <div className="footer-trust">
-      <div className="container">
-        <div className="footer-trust-inner">
-          <div className="trust-item">
-            <svg viewBox="0 0 64 64" strokeLinecap="round" strokeLinejoin="round">
-              <rect x="4" y="24" width="36" height="22" rx="2" strokeWidth="2" stroke="#fff"/>
-              <path d="M40 32h10l8 10v8H40V32z" strokeWidth="2" stroke="#fff"/>
-              <circle cx="16" cy="50" r="5" strokeWidth="2" stroke="#fff"/>
-              <circle cx="48" cy="50" r="5" strokeWidth="2" stroke="#fff"/>
-            </svg>
-            <span>Free Shipping</span>
-          </div>
-          <div className="trust-item">
-            <svg viewBox="0 0 64 64" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M12 32a20 20 0 0 1 40 0" strokeWidth="2" stroke="#fff"/>
-              <rect x="4" y="30" width="8" height="16" rx="4" strokeWidth="2" stroke="#fff"/>
-              <rect x="52" y="30" width="8" height="16" rx="4" strokeWidth="2" stroke="#fff"/>
-            </svg>
-            <span>Online Support</span>
-          </div>
-          <div className="trust-item">
-            <svg viewBox="0 0 64 64" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M32 4 L56 14 L56 36 Q56 52 32 60 Q8 52 8 36 L8 14 Z" strokeWidth="2" stroke="#fff"/>
-            </svg>
-            <span>99% Guarantee</span>
-          </div>
-          <div className="trust-item">
-            <svg viewBox="0 0 64 64" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M4 8h4l12 36h32l8-28H16" strokeWidth="2" stroke="#fff"/>
-              <circle cx="26" cy="52" r="5" strokeWidth="2" stroke="#fff"/>
-              <circle cx="50" cy="52" r="5" strokeWidth="2" stroke="#fff"/>
-            </svg>
-            <span>Secure Checkout</span>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <div className="footer-main">
       <div className="container">
         <div className="footer-grid">

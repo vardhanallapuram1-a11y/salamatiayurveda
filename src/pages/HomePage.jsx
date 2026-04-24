@@ -4,6 +4,7 @@ import FeatureBar from '../components/FeatureBar';
 import ProductSection from '../components/ProductSection';
 import AboutSection from '../components/AboutSection';
 import FaqSection from '../components/FaqSection';
+import TrustBar from '../components/TrustBar';
 import CtaSection from '../components/CtaSection';
 import HealthBenefitsSection from '../components/HealthBenefitsSection';
 import CertificationSection from '../components/CertificationSection';
@@ -15,10 +16,12 @@ const HomePage = () => (
     <ProductSection preview />
     <AboutSection />
     <FaqSection />
+    <TrustBar />
     <CtaSection />
     <HealthBenefitsSection />
     <CertificationSection />
   </main>
 );
+
 
 export default HomePage;

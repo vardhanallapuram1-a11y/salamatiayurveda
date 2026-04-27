@@ -17,7 +17,7 @@ const CtaSection = () => {
             style={{ width: '100px', height: '100px', objectFit: 'contain' }} 
           />
           <div style={{ textAlign: 'left' }}>
-            <h3 style={{ fontSize: '42px', fontWeight: 900, color: '#0d2818', margin: 0 }}>+91 7428526936</h3>
+            <h3 style={{ fontSize: 'clamp(24px, 8vw, 42px)', fontWeight: 900, color: '#0d2818', margin: 0 }}>+91 7428526936</h3>
             <p style={{ fontSize: '18px', fontWeight: 600, color: '#1a5c2a', margin: '5px 0 0' }}>Call us if you have any questions</p>
           </div>
         </div>

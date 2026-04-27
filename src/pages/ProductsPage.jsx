@@ -6,7 +6,7 @@ const ProductsPage = () => (
   <main style={{ marginTop: '80px' }}>
     {/* Page Banner */}
     <div style={{ background: 'var(--green)', padding: '40px 0', textAlign: 'center' }}>
-      <h1 style={{ color: '#fff', fontFamily: "'Playfair Display', serif", fontSize: '36px', marginBottom: '8px' }}>
+      <h1 style={{ color: '#fff', fontFamily: "'Playfair Display', serif", fontSize: 'clamp(28px, 7vw, 36px)', marginBottom: '8px' }}>
         Our Products
       </h1>
 

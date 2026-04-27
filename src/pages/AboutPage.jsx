@@ -1,5 +1,7 @@
 import React from 'react';
 import aboutImg from '../assets/about_us.png';
+import CtaSection from '../components/CtaSection';
+import CertificationSection from '../components/CertificationSection';
 
 const AboutPage = () => (
   <main style={{ marginTop: '80px' }}>
@@ -35,6 +37,19 @@ const AboutPage = () => (
               With Salamati Ayurveda, you can use nature's way of staying healthy in a way that
               fits your busy life today. This can help you have a better and more balanced future.
             </p>
+            <div style={{ marginTop: '24px' }}>
+              <a
+                href="tel:+917428526936"
+                style={{
+                  display: 'inline-flex', alignItems: 'center', gap: '8px',
+                  background: '#0d2818', color: '#fff',
+                  padding: '12px 24px', fontWeight: 700, fontSize: '15px',
+                  fontFamily: "'Playfair Display', serif",
+                }}
+              >
+                📞 +91 7428526936
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -92,17 +107,11 @@ const AboutPage = () => (
             they provide extensive information about Ayurvedic principles and how to incorporate them into
             daily life. This empowers consumers to take a more active role in their health.
           </p>
-          <div style={{ marginTop: '16px' }}>
-            <a href="tel:+917428526936" style={{
-              background: '#0d2818', color: '#fff', padding: '14px 32px',
-              fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: '16px', display: 'inline-block'
-            }}>
-              📞 +91 7428526936 — Call Us If You Have Any Questions
-            </a>
-          </div>
         </div>
       </div>
     </section>
+    <CtaSection />
+    <CertificationSection />
   </main>
 );
 

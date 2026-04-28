@@ -1,9 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import logo from '../assets/logo.png';
 
-const Footer = () => (
-  <footer className="site-footer" id="contact">
+const Footer = () => {
+  return (
+    <footer className="site-footer" id="contact">
 
     <div className="footer-main">
       <div className="container">
@@ -74,6 +75,7 @@ const Footer = () => (
       </div>
     </div>
   </footer>
-);
+  );
+};
 
 export default Footer;

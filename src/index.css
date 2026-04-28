@@ -367,6 +367,21 @@ button {
 @media (max-width: 900px) {
   .products-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 15px; /* Reduced gap to allow larger cards */
+  }
+  
+  .product-card h3 {
+    font-size: 16px; /* Slightly larger for better readability */
+  }
+  
+  .product-price {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 10px; /* More space for content on small phones */
   }
 }
 
@@ -394,8 +409,10 @@ button {
   transition: transform 0.3s ease;
 }
 
-.product-card:hover .product-image-wrap img {
-  transform: scale(1.05);
+@media (max-width: 600px) {
+  .product-image-wrap img {
+    max-height: 250px; /* Allow more height for products on mobile */
+  }
 }
 
 .on-sale-badge {
@@ -570,7 +587,9 @@ button {
 
 /* ==================== FOOTER ==================== */
 .site-footer {
-  background: var(--green);
+  background: linear-gradient(rgba(6, 30, 16, 0.95), rgba(6, 30, 16, 0.95)), url('/src/assets/imgs/footer_bg.png');
+  background-size: cover;
+  background-position: center;
   color: #fff;
 }
 

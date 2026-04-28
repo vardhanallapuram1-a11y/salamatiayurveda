@@ -37,19 +37,6 @@ const AboutPage = () => (
               With Salamati Ayurveda, you can use nature's way of staying healthy in a way that
               fits your busy life today. This can help you have a better and more balanced future.
             </p>
-            <div style={{ marginTop: '24px' }}>
-              <a
-                href="tel:+917428526936"
-                style={{
-                  display: 'inline-flex', alignItems: 'center', gap: '8px',
-                  background: '#0d2818', color: '#fff',
-                  padding: '12px 24px', fontWeight: 700, fontSize: '15px',
-                  fontFamily: "'Playfair Display', serif",
-                }}
-              >
-                📞 +91 7428526936
-              </a>
-            </div>
           </div>
         </div>
       </div>

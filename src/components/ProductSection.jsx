@@ -15,15 +15,16 @@ const weeklyDeals = productsData.filter(p =>
 
 // Each card is its own component so the hook is called at the top level (Rules of Hooks)
 const ProductCard = ({ p, index, direction }) => {
-  const startX = direction === 'left' ? -300 : 300;
+  // Use a smaller travel distance so mobile screens don't clip the elements out of the IntersectionObserver bounds
+  const startX = direction === 'left' ? -100 : 100;
 
   return (
     <motion.div 
       key={p.id}
       initial={{ opacity: 0, x: startX, scale: 0.9 }}
       whileInView={{ opacity: 1, x: 0, scale: 1 }}
-      viewport={{ once: true, margin: "-50px" }}
-      transition={{ duration: 0.8, delay: index * 0.1, ease: "easeOut" }}
+      viewport={{ once: true, margin: "-20px" }}
+      transition={{ duration: 0.6, delay: index * 0.1, ease: "easeOut" }}
     >
       <div className="product-card">
         <Link to={`/product/${p.id}`} className="product-image-wrap">

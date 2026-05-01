@@ -1,7 +1,7 @@
 import React from 'react';
 
 const MyAccount = () => (
-  <main style={{ marginTop: '80px' }}>
+  <main style={{ marginTop: '100px' }}>
     <div style={{ background: 'var(--green)', padding: '60px 0', textAlign: 'center' }}>
       <h1 style={{ color: '#ebbf17', fontFamily: "'Playfair Display', serif", fontSize: '48px', fontWeight: 700, margin: 0 }}>
         My account

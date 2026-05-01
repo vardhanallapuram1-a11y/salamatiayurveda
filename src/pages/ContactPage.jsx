@@ -2,7 +2,7 @@ import React from 'react';
 
 const ContactPage = () => {
   return (
-    <main style={{ marginTop: '80px' }}>
+    <main style={{ marginTop: '100px' }}>
       {/* Page Banner */}
       <div style={{ 
         background: '#0d2818', 

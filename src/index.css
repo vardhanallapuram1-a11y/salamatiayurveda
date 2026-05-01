@@ -82,11 +82,11 @@ button {
   justify-content: space-between;
   padding-top: 8px;
   padding-bottom: 8px;
-  min-height: 80px;
+  min-height: 100px;
 }
 
 .header-logo img {
-  height: 60px;
+  height: 80px;
   width: auto;
   object-fit: contain;
 }
@@ -103,7 +103,7 @@ button {
   gap: 4px;
   padding: 8px 16px;
   font-family: 'Playfair Display', serif;
-  font-size: 16px;
+  font-size: 19px;
   font-weight: 700;
   color: #fff;
   transition: color 0.2s;
@@ -144,7 +144,7 @@ button {
 
 .mobile-menu a {
   font-family: 'Playfair Display', serif;
-  font-size: 16px;
+  font-size: 19px;
   font-weight: 700;
   color: #fff;
   padding: 8px 0;
@@ -167,7 +167,7 @@ button {
 
 /* ==================== HERO ==================== */
 .hero-section {
-  margin-top: 80px;
+  margin-top: 100px;
   position: relative;
   background: #000;
   overflow: hidden;
@@ -930,5 +930,29 @@ button {
   .footer-contact-item span,
   .footer-contact-item a {
     font-size: 14px !important;
+  }
+}
+
+/* ==================== CART & BADGE ==================== */
+.cart-badge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: var(--gold-btn);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 900px) {
+  .mobile-cart-icon {
+    display: flex !important;
   }
 }

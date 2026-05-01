@@ -53,7 +53,7 @@ const RemedyDetailPage = () => {
   };
 
   return (
-    <main style={{ marginTop: '80px', background: '#fcfcfc', paddingBottom: '80px' }}>
+    <main style={{ marginTop: '100px', background: '#fcfcfc', paddingBottom: '80px' }}>
 
 
       {/* Banner matching Image 2 */}

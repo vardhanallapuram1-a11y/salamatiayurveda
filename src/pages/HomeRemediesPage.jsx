@@ -33,7 +33,7 @@ const HomeRemediesPage = () => {
   const hasMore = visibleCount < remediesData.length;
 
   return (
-    <main style={{ marginTop: '80px' }}>
+    <main style={{ marginTop: '100px' }}>
       <div style={{ background: 'var(--green)', padding: '50px 0', textAlign: 'center' }}>
         <h1 style={{ color: '#fff', fontFamily: "'Playfair Display', serif", fontSize: '42px', marginBottom: '8px' }}>
           Home Remedies

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { productsData } from '../data/productsData';
 
 const ProductsPage = () => (
-  <main style={{ marginTop: '80px' }}>
+  <main style={{ marginTop: '100px' }}>
     {/* Page Banner */}
     <div style={{ background: 'var(--green)', padding: '40px 0', textAlign: 'center' }}>
       <h1 style={{ color: '#fff', fontFamily: "'Playfair Display', serif", fontSize: 'clamp(28px, 7vw, 36px)', marginBottom: '8px' }}>

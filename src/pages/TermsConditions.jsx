@@ -1,7 +1,7 @@
 import React from 'react';
 
 const TermsConditions = () => (
-  <main style={{ marginTop: '80px' }}>
+  <main style={{ marginTop: '100px' }}>
     <div style={{ background: 'var(--green)', padding: '40px 0', textAlign: 'center' }}>
       <h1 style={{ color: '#fff', fontFamily: "'Playfair Display', serif", fontSize: '36px', marginBottom: '8px' }}>
         Terms and Conditions

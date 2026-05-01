@@ -2,17 +2,25 @@ import React, { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { getProductById, productsData } from '../data/productsData';
 
+import { useCart } from '../context/CartContext';
+
 const ProductDetailPage = () => {
   const { id } = useParams();
   const product = getProductById(id);
   const [activeTab, setActiveTab] = useState('description');
+  const [quantity, setQuantity] = useState(1);
+  const { addToCart } = useCart();
 
   const relatedProducts = productsData
     .filter(p => p.category === product.category && p.id !== product.id)
     .slice(0, 4);
 
+  const handleAddToCart = () => {
+    addToCart(product, quantity);
+  };
+
   return (
-    <main style={{ marginTop: '80px' }}>
+    <main style={{ marginTop: '100px' }}>
       <div style={{ background: 'var(--green)', padding: '40px 0', textAlign: 'center' }}>
         <h1 style={{ color: '#fff', fontFamily: "'Playfair Display', serif", fontSize: '32px', marginBottom: '8px' }}>
           {product.name}
@@ -62,21 +70,44 @@ const ProductDetailPage = () => {
                 <p style={{ color: '#555' }}>{product.usage}</p>
               </div>
 
+              <div style={{ marginBottom: '30px', display: 'flex', alignItems: 'center', gap: '15px' }}>
+                <div style={{ display: 'flex', alignItems: 'center', border: '1px solid #ddd', borderRadius: '4px', overflow: 'hidden' }}>
+                  <button onClick={() => setQuantity(q => Math.max(1, q - 1))} style={{ padding: '10px 15px', background: '#f5f5f5' }}>-</button>
+                  <span style={{ padding: '10px 20px', minWidth: '50px', textAlign: 'center' }}>{quantity}</span>
+                  <button onClick={() => setQuantity(q => q + 1)} style={{ padding: '10px 15px', background: '#f5f5f5' }}>+</button>
+                </div>
+                <button 
+                  onClick={handleAddToCart}
+                  style={{
+                    flex: 1,
+                    background: '#f1b317',
+                    color: '#0d2818',
+                    padding: '12px 20px',
+                    borderRadius: '4px',
+                    fontWeight: 700,
+                    fontSize: '16px',
+                    transition: 'all 0.3s'
+                  }}
+                >
+                  Add to Cart
+                </button>
+              </div>
+
               <a 
                 href={`https://wa.me/917428526936?text=I am interested in ${product.name}`}
                 target="_blank"
                 rel="noreferrer"
                 style={{
                   display: 'block',
-                  background: 'var(--green)',
-                  color: '#fff',
+                  border: '2px solid var(--green)',
+                  color: 'var(--green)',
                   textAlign: 'center',
-                  padding: '18px',
+                  padding: '12px',
                   borderRadius: '4px',
                   fontWeight: 700,
-                  fontSize: '18px',
+                  fontSize: '16px',
                   textDecoration: 'none',
-                  transition: 'background 0.3s'
+                  transition: 'all 0.3s'
                 }}
               >
                 Inquiry on WhatsApp
@@ -120,7 +151,7 @@ const ProductDetailPage = () => {
 
           {/* Related Products Section */}
           {relatedProducts.length > 0 && (
-            <div style={{ marginTop: '80px' }}>
+            <div style={{ marginTop: '100px' }}>
               <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: '32px', color: 'var(--green)', marginBottom: '40px', borderBottom: '2px solid #eee', paddingBottom: '15px' }}>
                 Related products
               </h2>

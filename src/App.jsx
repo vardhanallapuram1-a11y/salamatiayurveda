@@ -18,28 +18,34 @@ import ShippingPolicy from './pages/ShippingPolicy';
 import MyAccount from './pages/MyAccount';
 import ProductDetailPage from './pages/ProductDetailPage';
 
+import { CartProvider } from './context/CartContext';
+import CheckoutPage from './pages/CheckoutPage';
+
 function App() {
   return (
-    <div>
-      <Header />
+    <CartProvider>
+      <div>
+        <Header />
 
-      <ScrollToTop />
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/products" element={<ProductsPage />} />
-        <Route path="/about" element={<AboutPage />} />
-        <Route path="/contact" element={<ContactPage />} />
-        <Route path="/home-remedies" element={<HomeRemediesPage />} />
-        <Route path="/home-remedies/:slug" element={<RemedyDetailPage />} />
-        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-        <Route path="/terms-conditions" element={<TermsConditions />} />
-        <Route path="/refund-returns" element={<RefundPolicy />} />
-        <Route path="/shipping-and-delivery" element={<ShippingPolicy />} />
-        <Route path="/my-account" element={<MyAccount />} />
-        <Route path="/product/:id" element={<ProductDetailPage />} />
-      </Routes>
+        <ScrollToTop />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/products" element={<ProductsPage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/home-remedies" element={<HomeRemediesPage />} />
+          <Route path="/home-remedies/:slug" element={<RemedyDetailPage />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms-conditions" element={<TermsConditions />} />
+          <Route path="/refund-returns" element={<RefundPolicy />} />
+          <Route path="/shipping-and-delivery" element={<ShippingPolicy />} />
+          <Route path="/my-account" element={<MyAccount />} />
+          <Route path="/product/:id" element={<ProductDetailPage />} />
+          <Route path="/checkout" element={<CheckoutPage />} />
+        </Routes>
 
-      <Footer />
+        <Footer />
+      </div>
 
       {/* WhatsApp Pill — "How May I Help You" */}
       <a
@@ -56,7 +62,7 @@ function App() {
           </svg>
         </div>
       </a>
-    </div>
+    </CartProvider>
   );
 }
 

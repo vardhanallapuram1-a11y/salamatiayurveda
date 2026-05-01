@@ -1,21 +1,34 @@
 import React from 'react';
-import aboutIllustration from '../assets/about_illustration.png';
+import { motion } from 'framer-motion';
+import aboutIllustration from '../assets/imgs/yogaa.jpg';
 
 const AboutSection = () => (
-  <section className="about-section" id="about">
+  <section className="about-section" id="about" style={{ overflow: 'hidden' }}>
     <div className="container">
       <div className="about-inner">
 
         {/* Left: Illustration */}
-        <div className="about-image">
+        <motion.div 
+          className="about-image"
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+        >
           <img
             src={aboutIllustration}
             alt="About Salamati Ayurveda"
           />
-        </div>
+        </motion.div>
 
         {/* Right: Content — exact text from salamatiayurveda.com/about-us/ */}
-        <div className="about-content">
+        <motion.div 
+          className="about-content"
+          initial={{ opacity: 0, x: 100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+        >
           <p className="subtitle">Best Ayurveda Company</p>
           <h2>SALAMATI AYURVEDA</h2>
           <div className="gold-line"></div>
@@ -34,7 +47,7 @@ const AboutSection = () => (
             With Salamati Ayurveda, you can use nature's way of staying healthy in a way that
             fits your busy life today. This can help you have a better and more balanced future.
           </p>
-        </div>
+        </motion.div>
       </div>
     </div>
   </section>

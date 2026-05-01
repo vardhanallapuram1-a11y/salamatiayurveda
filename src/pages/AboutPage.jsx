@@ -1,5 +1,5 @@
 import React from 'react';
-import aboutImg from '../assets/about_us.png';
+import aboutImg from '../assets/about_illustration.png';
 import CtaSection from '../components/CtaSection';
 import CertificationSection from '../components/CertificationSection';
 

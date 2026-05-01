@@ -337,6 +337,10 @@ button {
   padding: 60px 0;
 }
 
+.products-section .container {
+  max-width: 1400px;
+}
+
 .section-title {
   text-align: center;
   margin-bottom: 40px;
@@ -403,7 +407,7 @@ button {
 
 .product-image-wrap img {
   width: 100%;
-  max-height: 380px;
+  max-height: 480px;
   object-fit: contain;
   mix-blend-mode: multiply;
   transition: transform 0.3s ease;
@@ -430,7 +434,7 @@ button {
 
 .product-card h3 {
   font-family: 'Playfair Display', serif;
-  font-size: 19px;
+  font-size: 22px;
   font-weight: 700;
   color: #006400; /* Original dark green */
   margin: 12px 0 8px;
@@ -446,7 +450,7 @@ button {
   align-items: center;
   justify-content: center;
   gap: 8px;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .product-price del {
@@ -493,7 +497,7 @@ button {
   grid-template-columns: 1fr 1fr;
   gap: 60px;
   align-items: center;
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -509,7 +513,7 @@ button {
 }
 
 .about-image img {
-  max-width: 380px;
+  max-width: 500px;
   width: 100%;
   height: auto;
   object-fit: contain;
@@ -527,7 +531,7 @@ button {
 
 .about-content h2 {
   font-family: 'Playfair Display', serif;
-  font-size: 36px;
+  font-size: 42px;
   font-weight: 800;
   color: var(--text-green);
   text-transform: uppercase;
@@ -543,7 +547,7 @@ button {
 }
 
 .about-content p {
-  font-size: 14px;
+  font-size: 16px;
   color: var(--text-muted);
   line-height: 1.8;
   margin-bottom: 16px;
@@ -662,13 +666,13 @@ button {
 }
 
 .footer-brand img {
-  height: 60px;
+  height: 90px;
   object-fit: contain;
   margin-bottom: 16px;
 }
 
 .footer-brand p {
-  font-size: 13px;
+  font-size: 17px;
   color: rgba(255, 255, 255, 0.7);
   line-height: 1.8;
   margin-bottom: 20px;
@@ -698,7 +702,7 @@ button {
 
 .footer-col h4 {
   font-family: 'Playfair Display', serif;
-  font-size: 17px;
+  font-size: 22px;
   font-weight: 700;
   color: #fff;
   margin-bottom: 20px;
@@ -723,7 +727,7 @@ button {
 }
 
 .footer-col ul li a {
-  font-size: 13px;
+  font-size: 17px;
   color: rgba(255, 255, 255, 0.7);
   transition: color 0.2s;
 }
@@ -749,16 +753,18 @@ button {
   margin-top: 2px;
 }
 
-.footer-contact-item span {
-  font-size: 13px;
+.footer-contact-item span,
+.footer-contact-item a {
+  font-size: 17px;
   color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
 }
 
 .footer-bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding: 20px 0;
   text-align: center;
-  font-size: 12px;
+  font-size: 14px;
   color: rgba(255, 255, 255, 0.5);
 }
 

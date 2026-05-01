@@ -12,7 +12,7 @@ const PrivacyPolicy = () => (
     <section style={{ padding: '60px 0', background: '#fff' }}>
       <div className="container" style={{ maxWidth: '800px', color: '#555', lineHeight: 1.8 }}>
         <h2 style={{ color: 'var(--green)', fontFamily: "'Playfair Display', serif", marginBottom: '24px' }}>Introduction</h2>
-        <p>Your privacy is critically important to us. At SALAMATI AYURVEDA we have a few fundamental principles:</p>
+        <p>Your privacy is critically important to us. At SALAMATI AYURVEDA PVT LTD we have a few fundamental principles:</p>
         <ul style={{ paddingLeft: '20px', marginBottom: '32px' }}>
           <li>We don't ask for your personal information unless we truly need it.</li>
           <li>We don't share your personal information with anyone except to comply with the law, develop our products, or protect our rights.</li>

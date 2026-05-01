@@ -4,7 +4,7 @@ const ContactSection = () => (
   <section style={{ background: '#fff', padding: '60px 0' }} id="contact-info">
     <div className="container" style={{ maxWidth: '900px' }}>
       <div className="section-title">
-        <h2 style={{ color: '#0d2818' }}>SALAMATI AYURVEDA</h2>
+        <h2 style={{ color: '#0d2818' }}>SALAMATI AYURVEDA PVT LTD</h2>
         <div className="title-underline"></div>
       </div>
 

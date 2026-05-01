@@ -6,35 +6,65 @@ import slide3 from '../assets/imgs/SLIDER-3.jpg';
 import slide4 from '../assets/imgs/slider-4.jpg';
 
 const slides = [slide1, slide2, slide3, slide4];
+const extendedSlides = [...slides, slides[0]];
 
 const Hero = () => {
   const [current, setCurrent] = useState(0);
+  const [isTransitioning, setIsTransitioning] = useState(true);
 
-  const prev = () => setCurrent(c => (c === 0 ? slides.length - 1 : c - 1));
-  const next = () => setCurrent(c => (c === slides.length - 1 ? 0 : c + 1));
+  const prev = () => {
+    if (current === 0) {
+      setIsTransitioning(false);
+      setCurrent(slides.length);
+      setTimeout(() => {
+        setIsTransitioning(true);
+        setCurrent(slides.length - 1);
+      }, 50);
+    } else {
+      setIsTransitioning(true);
+      setCurrent(c => c - 1);
+    }
+  };
+
+  const next = () => {
+    setIsTransitioning(true);
+    setCurrent(c => {
+      if (c >= slides.length) return 1;
+      return c + 1;
+    });
+  };
 
   useEffect(() => {
-    const t = setInterval(next, 5000);
+    if (current === slides.length) {
+      const timeout = setTimeout(() => {
+        setIsTransitioning(false);
+        setCurrent(0);
+      }, 500);
+      return () => clearTimeout(timeout);
+    }
+  }, [current]);
+
+  useEffect(() => {
+    const t = setInterval(next, 1000);
     return () => clearInterval(t);
   }, []);
 
   return (
     <section className="hero-section">
       <div className="hero-slider">
-        <div 
-          className="hero-track" 
-          style={{ 
+        <div
+          className="hero-track"
+          style={{
             transform: `translateX(-${current * 100}%)`,
-            transition: 'transform 0.5s ease-in-out'
+            transition: isTransitioning ? 'transform 0.5s ease-in-out' : 'none'
           }}
         >
-          {slides.map((src, i) => (
-            <div key={i} className={`hero-slide ${current === i ? 'active' : ''}`}>
+          {extendedSlides.map((src, i) => (
+            <div key={i} className={`hero-slide ${current === i || (current === slides.length && i === 0) ? 'active' : ''}`}>
               <img src={src} alt={`Slide ${i + 1}`} />
             </div>
           ))}
         </div>
-
 
         <button className="hero-arrow prev" onClick={prev} aria-label="Previous">&#8249;</button>
         <button className="hero-arrow next" onClick={next} aria-label="Next">&#8250;</button>
@@ -43,8 +73,11 @@ const Hero = () => {
           {slides.map((_, i) => (
             <button
               key={i}
-              className={`hero-dot ${current === i ? 'active' : ''}`}
-              onClick={() => setCurrent(i)}
+              className={`hero-dot ${(current === i) || (current === slides.length && i === 0) ? 'active' : ''}`}
+              onClick={() => {
+                setIsTransitioning(true);
+                setCurrent(i);
+              }}
               aria-label={`Slide ${i + 1}`}
             />
           ))}

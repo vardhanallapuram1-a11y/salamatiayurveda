@@ -18,23 +18,23 @@ const AboutPage = () => (
       <div className="container" style={{ maxWidth: '1000px' }}>
         <div className="about-inner">
           <div className="about-image">
-            <img src={aboutImg} alt="About Salamati Ayurveda" />
+            <img src={aboutImg} alt="About Salamati Ayurveda Pvt Ltd" />
           </div>
           <div className="about-content">
             <p className="subtitle">Best Ayurveda Company</p>
-            <h2>SALAMATI AYURVEDA</h2>
+            <h2>SALAMATI AYURVEDA PVT LTD</h2>
             <div className="gold-line"></div>
             <p>
-              Salamati Ayurveda is the best company in India for helping people feel healthy.
-              Salamati Ayurveda uses old Indian health ideas in a new way. They make pills that
+              Salamati Ayurveda Pvt Ltd is the best company in India for helping people feel healthy.
+              Salamati Ayurveda Pvt Ltd uses old Indian health ideas in a new way. They make pills that
               are easy to take and don't taste bad. These pills have special mixes of herbs that
               are good for your whole body.
             </p>
             <p>
-              Many people today find it hard to use old health treatments. But Salamati Ayurveda
+              Many people today find it hard to use old health treatments. But Salamati Ayurveda Pvt Ltd
               makes it easy. Their pills don't taste like herbs, so even kids can take them.
               This smart idea helps everyone use the good parts of old Indian health wisdom.
-              With Salamati Ayurveda, you can use nature's way of staying healthy in a way that
+              With Salamati Ayurveda Pvt Ltd, you can use nature's way of staying healthy in a way that
               fits your busy life today. This can help you have a better and more balanced future.
             </p>
           </div>
@@ -51,9 +51,9 @@ const AboutPage = () => (
         </div>
         <div style={{ marginTop: '40px', display: 'flex', flexDirection: 'column', gap: '20px', fontSize: '15px', color: '#555', lineHeight: 1.9 }}>
           <p>
-            Salamati Ayurveda stands out as India's top company for helping people achieve and
+            Salamati Ayurveda Pvt Ltd stands out as India's top company for helping people achieve and
             maintain good health. In a world where many are searching for natural and holistic ways
-            to improve their well-being, Salamati Ayurveda offers a unique blend of ancient wisdom
+            to improve their well-being, Salamati Ayurveda Pvt Ltd offers a unique blend of ancient wisdom
             and modern convenience.
           </p>
           <p>
@@ -66,7 +66,7 @@ const AboutPage = () => (
           <p>
             One of the biggest challenges people face when trying to use traditional Ayurvedic remedies
             is the taste and smell of many herbal preparations. Often, these remedies come in the form
-            of bitter-tasting powders or strong-smelling oils. Salamati Ayurveda has solved this problem
+            of bitter-tasting powders or strong-smelling oils. Salamati Ayurveda Pvt Ltd has solved this problem
             by creating pills and tablets that contain all the benefits of Ayurvedic herbs without the
             unpleasant taste or smell.
           </p>
@@ -78,7 +78,7 @@ const AboutPage = () => (
             bed.
           </p>
           <p>
-            Another significant advantage of Salamati Ayurveda's approach is that it makes Ayurvedic
+            Another significant advantage of Salamati Ayurveda Pvt Ltd's approach is that it makes Ayurvedic
             remedies accessible to people of all ages. Children, who might resist taking bitter-tasting
             herbal preparations, can now easily swallow a small pill or chewable tablet. This means that
             families can adopt an Ayurvedic approach to health together.
@@ -90,7 +90,7 @@ const AboutPage = () => (
             technology to ensure that their beneficial properties are preserved.
           </p>
           <p>
-            Education is another key component of Salamati Ayurveda's mission. Along with their products,
+            Education is another key component of Salamati Ayurveda Pvt Ltd's mission. Along with their products,
             they provide extensive information about Ayurvedic principles and how to incorporate them into
             daily life. This empowers consumers to take a more active role in their health.
           </p>

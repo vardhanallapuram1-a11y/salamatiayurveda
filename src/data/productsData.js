@@ -200,7 +200,7 @@ export const getProductById = (id) => {
     original: '₹0.00',
     current: '₹0.00',
     image: '',
-    overview: 'High quality Ayurvedic medicine from Salamati Ayurveda.',
+    overview: 'High quality Ayurvedic medicine from Salamati Ayurveda Pvt Ltd.',
     benefits: ['Pure Herbs', 'Lab Tested', 'Effective'],
     usage: 'Consult your physician.'
   };

@@ -33,7 +33,7 @@ const TermsConditions = () => (
         <p>All fees and charges for our services are detailed on our website. Payments are due at the time of purchase unless otherwise specified. We reserve the right to change our fees and payment terms at any time.</p>
 
         <h2 style={{ color: 'var(--green)', fontFamily: "'Playfair Display', serif", marginBottom: '24px' }}>Limitation of Liability</h2>
-        <p>Salamati Ayurveda shall not be liable for any indirect, incidental, special, or consequential damages arising out of or in connection with your use of our services. Our total liability to you for any claims related to our services is limited to the amount paid by you for those services.</p>
+        <p>Salamati Ayurveda Pvt Ltd shall not be liable for any indirect, incidental, special, or consequential damages arising out of or in connection with your use of our services. Our total liability to you for any claims related to our services is limited to the amount paid by you for those services.</p>
 
         <h2 style={{ color: 'var(--green)', fontFamily: "'Playfair Display', serif", marginBottom: '24px' }}>Termination</h2>
         <p>We reserve the right to terminate your access to our website and services at our sole discretion, without notice, if you violate these terms and conditions or engage in any conduct that we deem harmful or inappropriate.</p>

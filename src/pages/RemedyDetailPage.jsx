@@ -4,7 +4,7 @@ import { remediesData } from '../data/remediesData';
 
 const RemedyDetailPage = () => {
   const { slug } = useParams();
-  const remedy = remediesData.find(r => r.slug === slug);
+  const remedy = remediesData.find(r => r.slug === slug || decodeURIComponent(r.slug) === slug);
 
   if (!remedy) {
     return <Navigate to="/home-remedies" replace />;
@@ -15,17 +15,40 @@ const RemedyDetailPage = () => {
     if (!text) return <p style={{ color: 'red' }}>Content is currently unavailable or string is empty.</p>;
 
     return text.split('\n').map((line, i) => {
-      if (line.trim() === '') return <br key={i} />;
+      let currentLine = line.trim();
+      if (currentLine === '') return <br key={i} />;
+
+      // Remove headings (replace #, ##, ###, #### with nothing)
+      if (currentLine.match(/^#{1,6}\s+/)) {
+        currentLine = currentLine.replace(/^#{1,6}\s+/, '');
+        currentLine = `**${currentLine}**`; // make headings bold
+      }
+
+      // Handle bullets (* or -) -> render as bullet points
+      let isBullet = false;
+      if (currentLine.match(/^[-*]\s+/)) {
+        currentLine = currentLine.replace(/^[-*]\s+/, '');
+        isBullet = true;
+      }
 
       // Simple parse for bold text
-      const formattedLine = line.split(/(\*\*.*?\*\*)/g).map((part, index) => {
+      const formattedLine = currentLine.split(/(\*\*.*?\*\*)/g).map((part, index) => {
         if (part.startsWith('**') && part.endsWith('**')) {
           return <strong style={{ color: '#0d2818' }} key={index}>{part.slice(2, -2)}</strong>;
         }
         return part;
       });
 
-      return <p key={i} style={{ marginBottom: '8px' }}>{formattedLine}</p>;
+      if (isBullet) {
+        return (
+          <div key={i} style={{ display: 'flex', gap: '10px', marginBottom: '8px', paddingLeft: '20px' }}>
+            <span style={{ color: '#0d2818', fontWeight: 'bold' }}>•</span>
+            <p style={{ margin: 0 }}>{formattedLine}</p>
+          </div>
+        );
+      }
+
+      return <p key={i} style={{ marginBottom: '12px' }}>{formattedLine}</p>;
     });
   };
 

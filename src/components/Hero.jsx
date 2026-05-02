@@ -45,7 +45,7 @@ const Hero = () => {
   }, [current]);
 
   useEffect(() => {
-    const t = setInterval(next, 300000);
+    const t = setInterval(next, 3000);
     return () => clearInterval(t);
   }, []);
 

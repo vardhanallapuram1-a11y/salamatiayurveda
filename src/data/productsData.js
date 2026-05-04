@@ -49,9 +49,9 @@ export const productsData = [
   },
   {
     id: 'night-power-capsules',
-    name: 'Shilajit Capsule',
-    original: '₹1,299.00',
-    current: '₹1,099.00',
+    name: 'Shilajit Capsule (Premium)',
+    original: '₹2,999.00',
+    current: '₹2,499.00',
     image: shilajitCapH,
     category: 'Man Care',
     highlights: [
@@ -67,9 +67,9 @@ export const productsData = [
   },
   {
     id: 'shilajit-capsules-60',
-    name: 'Shilajit Capsule (Premium)',
-    original: '₹2,999.00',
-    current: '₹2,499.00',
+    name: 'Shilajit Capsule',
+    original: '₹1,299.00',
+    current: '₹1,099.00',
     image: shilajitCap1,
     category: 'Man Care',
     highlights: [
@@ -85,9 +85,9 @@ export const productsData = [
   },
   {
     id: 'booster-tiger-premium',
-    name: 'Sexual Booster Kit',
-    original: '₹4,197.00',
-    current: '₹3,197.00',
+    name: 'Sexual Booster Kit (Variant)',
+    original: '₹3,797.00',
+    current: '₹3,097.00',
     image: sexualBoosterL,
     category: 'Man Care',
     highlights: [
@@ -103,9 +103,9 @@ export const productsData = [
   },
   {
     id: 'booster-tiger-basic',
-    name: 'Sexual Booster Kit (Variant)',
-    original: '₹3,797.00',
-    current: '₹3,097.00',
+    name: 'Sexual Booster Kit',
+    original: '₹4,197.00',
+    current: '₹3,197.00',
     image: sexualBoosterM,
     category: 'Man Care',
     highlights: [
@@ -200,7 +200,7 @@ export const getProductById = (id) => {
     original: '₹0.00',
     current: '₹0.00',
     image: '',
-    overview: 'High quality Ayurvedic medicine from Salamati Ayurveda Pvt Ltd.',
+    overview: 'High quality Ayurvedic medicine from Salamati Ayurveda Pvt. Ltd',
     benefits: ['Pure Herbs', 'Lab Tested', 'Effective'],
     usage: 'Consult your physician.'
   };

@@ -1,5 +1,6 @@
 import useScrollReveal from '../hooks/useScrollReveal';
 import certImg from '../assets/imgs/Alma Shakti Capsule N.png';
+import googleImg from '../assets/imgs/google.jpeg';
 
 const CertificationSection = () => {
   const [ref, isVisible] = useScrollReveal();
@@ -28,6 +29,26 @@ const CertificationSection = () => {
             src={certImg} 
             alt="Our Certification" 
             style={{ width: '100%', height: 'auto', display: 'block' }} 
+          />
+        </div>
+        <div 
+          className={`reveal ${isVisible ? 'revealed' : ''} delay-400`}
+          style={{ 
+            marginTop: '30px',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center'
+          }}
+        >
+          <img 
+            src={googleImg} 
+            alt="Google Reviews" 
+            style={{ 
+              maxWidth: '220px', 
+              width: '100%', 
+              height: 'auto',
+              display: 'block'
+            }} 
           />
         </div>
       </div>

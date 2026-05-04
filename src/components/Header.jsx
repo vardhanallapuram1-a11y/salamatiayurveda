@@ -26,7 +26,7 @@ const Header = () => {
       <div className="container">
         <div className="header-logo">
           <Link to="/">
-            <img src={logo} alt="Salamati Ayurveda Pvt. Ltd" />
+            <img src={logo} alt="Salamati Ayurveda Pvt. Ltd." />
           </Link>
         </div>
         <nav className="header-nav">

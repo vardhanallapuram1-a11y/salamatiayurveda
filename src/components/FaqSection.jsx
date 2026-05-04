@@ -21,7 +21,7 @@ const FaqSection = () => {
             </div>
             {open === i && (
               <div style={{ paddingTop: '12px', fontSize: '14px', color: '#555', lineHeight: 1.7 }}>
-                Salamati Ayurveda Pvt. Ltd provides the best natural Ayurvedic solutions for this concern.
+                Salamati Ayurveda Pvt. Ltd. provides the best natural Ayurvedic solutions for this concern.
                 Our products are made from 100% pure herbal extracts. Consult with our experts for
                 personalized guidance.
               </div>

@@ -44,7 +44,7 @@ const CertificationSection = () => {
             src={googleImg} 
             alt="Google Reviews" 
             style={{ 
-              maxWidth: '220px', 
+              maxWidth: '320px', 
               width: '100%', 
               height: 'auto',
               display: 'block'

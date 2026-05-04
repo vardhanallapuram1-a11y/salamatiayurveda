@@ -39,7 +39,7 @@ const RefundPolicy = () => (
 
         <h2 style={{ color: 'var(--green)', fontFamily: "'Playfair Display', serif", marginBottom: '24px' }}>Contact Us</h2>
         <p>If you have any questions or concerns about our cancellation and refund policy, please don't hesitate to contact us at ayurvedasalamati@gmail.com. We're here to help.</p>
-        <p>Thank you for choosing Salamati Ayurveda Pvt. Ltd!</p>
+        <p>Thank you for choosing Salamati Ayurveda Pvt. Ltd.!</p>
       </div>
     </section>
   </main>

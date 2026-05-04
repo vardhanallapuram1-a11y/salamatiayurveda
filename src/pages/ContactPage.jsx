@@ -20,7 +20,7 @@ const ContactPage = () => {
             letterSpacing: '1px',
             marginBottom: '12px' 
           }}>
-            SALAMATI AYURVEDA PVT. LTD
+            SALAMATI AYURVEDA PVT. LTD.
           </h1>
 
         </div>

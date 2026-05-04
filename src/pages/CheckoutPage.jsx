@@ -49,7 +49,7 @@ const CheckoutPage = () => {
       key: 'rzp_test_demo_key', // Replace with actual Razorpay Key ID
       amount: total * 100, // Amount in paise
       currency: 'INR',
-      name: 'Salamati Ayurveda Pvt. Ltd',
+      name: 'Salamati Ayurveda Pvt. Ltd.',
       description: 'Purchase of Ayurvedic Products',
       image: '/logo.png',
       handler: function (response) {

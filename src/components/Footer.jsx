@@ -15,11 +15,11 @@ const Footer = () => {
             <Link to="/">
               <img
                 src={logo}
-                alt="Salamati Ayurveda Pvt. Ltd"
+                alt="Salamati Ayurveda Pvt. Ltd."
               />
             </Link>
             <p>
-              Salamati Ayurveda Pvt. Ltd brings the timeless wisdom of traditional healing to your doorstep.
+              Salamati Ayurveda Pvt. Ltd. brings the timeless wisdom of traditional healing to your doorstep.
               We are dedicated to providing 100% pure Ayurvedic solutions.
             </p>
             <div className="footer-social">
@@ -83,7 +83,7 @@ const Footer = () => {
 
     <div className="footer-bottom">
       <div className="container">
-        © 2024 Salamati Ayurveda Pvt. Ltd All Rights Reserved.
+        © 2024 Salamati Ayurveda Pvt. Ltd. All Rights Reserved.
       </div>
     </div>
   </footer>

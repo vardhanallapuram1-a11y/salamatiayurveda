@@ -83,7 +83,7 @@ const Footer = () => {
 
     <div className="footer-bottom">
       <div className="container">
-        © {new Date().getFullYear()} Salamati Ayurveda Pvt. Ltd All Rights Reserved.
+        © 2024 Salamati Ayurveda Pvt. Ltd All Rights Reserved.
       </div>
     </div>
   </footer>
